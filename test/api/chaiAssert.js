@@ -25,4 +25,13 @@ describe("Chai Assert Example",() => {
         //Expect dalam body response terdapat value 'message'
         expect((await response).body).to.haveOwnProperty('message')
     })
+
+    it("Response body to haveOwnProperty", async() => {
+        //Expect dalam body response terdapat value 'message'
+        expect((await response).body).to.haveOwnProperty('not message')
+    })
+
+    //Reporting in mocha awesome
+
+
 })

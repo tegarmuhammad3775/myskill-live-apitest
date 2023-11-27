@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-11-27T13:28:16.956Z",
+    "end": "2023-11-27T13:28:18.886Z",
+    "duration": 1930,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "76dce657-cfb8-46a8-8f89-051d9f3fb9c6",
+      "title": "",
+      "fullFile": "E:\\[MySkill - Quality Assurance]\\Latihan\\Javascript API Automation\\PetStore API Test\\myskill-live-apitest\\test\\api\\chaiAssert.js",
+      "file": "\\test\\api\\chaiAssert.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "59110ca6-6140-4b3c-8fb9-a750565ae386",
+          "title": "Chai Assert Example",
+          "fullFile": "E:\\[MySkill - Quality Assurance]\\Latihan\\Javascript API Automation\\PetStore API Test\\myskill-live-apitest\\test\\api\\chaiAssert.js",
+          "file": "\\test\\api\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Response status equal to 200",
+              "fullTitle": "Chai Assert Example Response status equal to 200",
+              "timedOut": false,
+              "duration": 1920,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check response status harus sama dengan 200\nexpect((await response).status).to.equal(200)",
+              "err": {},
+              "uuid": "060404fe-ea83-4970-bdf0-7bb6e1bc5911",
+              "parentUUID": "59110ca6-6140-4b3c-8fb9-a750565ae386",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Response body to haveOwnProperty",
+              "fullTitle": "Chai Assert Example Response body to haveOwnProperty",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Expect dalam body response terdapat value 'message'\nexpect((await response).body).to.haveOwnProperty('message')",
+              "err": {},
+              "uuid": "8ae60bf4-4124-454b-8f11-6cba199a74db",
+              "parentUUID": "59110ca6-6140-4b3c-8fb9-a750565ae386",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Response body to haveOwnProperty",
+              "fullTitle": "Chai Assert Example Response body to haveOwnProperty",
+              "timedOut": false,
+              "duration": 1,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//Expect dalam body response terdapat value 'message'\nexpect((await response).body).to.haveOwnProperty('not message')",
+              "err": {
+                "message": "AssertionError: expected { code: 200, type: 'unknown', …(1) } to have own property 'not message'",
+                "estack": "AssertionError: expected { code: 200, type: 'unknown', …(1) } to have own property 'not message'\n    at Context.<anonymous> (test\\api\\chaiAssert.js:31:42)",
+                "diff": null
+              },
+              "uuid": "67196839-9ea8-4ca0-91bb-c31bde724f6f",
+              "parentUUID": "59110ca6-6140-4b3c-8fb9-a750565ae386",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "060404fe-ea83-4970-bdf0-7bb6e1bc5911",
+            "8ae60bf4-4124-454b-8f11-6cba199a74db"
+          ],
+          "failures": [
+            "67196839-9ea8-4ca0-91bb-c31bde724f6f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1921,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
