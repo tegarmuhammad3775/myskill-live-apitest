@@ -1,8 +1,9 @@
 const request = require("supertest");
+const baseUrl = require("../../env")
 
 describe("Post Request Example", function () {
   it("Success Create User", async () => {
-    const response = request("https://petstore.swagger.io/v2")
+    const response = request(baseUrl())
       .post("/user")
       .send({
         id: 111,
