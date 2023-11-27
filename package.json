@@ -7,7 +7,8 @@
     "test" : "mocha",
     "welcome" : "mocha test/api/welcomeTest.js",
     "test get": "mocha test/api/getExample.js",
-    "test post": "mocha test/api/postExample.js"
+    "test post": "mocha test/api/postExample.js",
+    "test assert": "mocha test/api/chaiAssert.js"
   },
   "repository": {
     "type": "git",
