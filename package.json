@@ -6,7 +6,7 @@
   "scripts": {
     "test" : "mocha",
     "welcome" : "mocha test/api/welcomeTest.js",
-    "test get": "mocha filename.js",
+    "test get": "mocha test/api/getExample.js",
     "test post": "mocha filename.js"
   },
   "repository": {
