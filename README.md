@@ -1,5 +1,5 @@
-# myskill-live-apitest (mocha chai)
-Petstore Sample API Automation Test using Javascript library Mocha and Chai
+# Javascript Automation Test with Mocha and Chai Library
+Petstore API Automation Test using Javascript Mocha and Chai Library
 
 **=> How to run**
 - Open Folder myskill-live-apitest in integrated terminal
