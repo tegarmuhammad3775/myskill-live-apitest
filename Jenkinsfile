@@ -13,11 +13,7 @@ pipeline{
     stage('Unit Test'){
       steps{
         sh 'npm config set user 0'
-      }
-      steps{
         sh 'npm config set unsafe-perm true'
-      }
-      steps{
         sh 'npm run welcome'
       }
     }
