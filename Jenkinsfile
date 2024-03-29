@@ -12,7 +12,7 @@ pipeline{
 
     stage('Unit Test'){
       steps{
-        sh 'npm run "test get"'
+        sh 'npm run welcome'
       }
     }
     
