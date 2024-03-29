@@ -1,7 +1,7 @@
 pipeline{
   agent any
   tools{
-    nodejs 'NodeV18'
+    nodejs 'Node ENV'
   }
   stages{
     stage('Install Deps'){
