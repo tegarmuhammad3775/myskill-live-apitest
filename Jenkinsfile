@@ -12,7 +12,6 @@ pipeline{
 
     stage('Unit Test'){
       steps{
-        sh 'npm config set user 0'
         sh 'npm config set unsafe-perm true'
         sh 'npm run welcome'
       }
